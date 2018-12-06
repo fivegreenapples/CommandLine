@@ -20,11 +20,14 @@ import PackageDescription
 
 let package = Package(
     name: "CommandLineKit",
+    products: [
+        .library(name: "CommandLineKit", targets: ["CommandLineKit"]),
+    ],
     targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages which this package depends on.
-        .target(
-            name: "CommandLineKit",
-            path: "CommandLineKit")
+    // Targets are the basic building blocks of a package. A target can define a module or a test suite.
+    // Targets can depend on other targets in this package, and on products in packages which this package depends on.
+    .target(
+        name: "CommandLineKit",
+        path: "CommandLineKit")
     ]
 )
